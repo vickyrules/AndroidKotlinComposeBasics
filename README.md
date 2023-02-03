@@ -1,4 +1,7 @@
-![image](https://user-images.githubusercontent.com/73611313/216630672-3c22298c-c831-40b5-8a8b-a0705118960b.png)
+| ![image](https://user-images.githubusercontent.com/73611313/216632656-974bdaec-e50b-4eed-9a7a-45574519cddc.png)    |
+|-----|
+| ![image](https://user-images.githubusercontent.com/73611313/216632993-6ab58413-0f0e-4533-8d78-ecc99f55e1dd.png)    |
+
 # Android-Kotlin-Compose Basics :
 * *Manifest file*
 
@@ -23,8 +26,11 @@ The setContent() function within the onCreate() function is used to define your 
 > The compiler takes the Kotlin code you wrote, looks at it line by line, and translates it into something that the computer can understand. This process is called compiling your code. 
 
 *Composable function*
+
 ``A Composable function (@Composable annotation above it) takes some input and generates what's shown on the screen.``
 > * @Composable function names are capitalized.
 > * You add the @Composable annotation before the function.
 > * @Composable functions can't return anything.
+
+
 
