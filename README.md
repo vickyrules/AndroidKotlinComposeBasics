@@ -1,6 +1,10 @@
+<div align = "center">
+
 | ![image](https://user-images.githubusercontent.com/73611313/216632656-974bdaec-e50b-4eed-9a7a-45574519cddc.png)    |
 |-----|
 | ![image](https://user-images.githubusercontent.com/73611313/216632993-6ab58413-0f0e-4533-8d78-ecc99f55e1dd.png)    |
+
+</div>
 
 # Android-Kotlin-Compose Basics :
 * *Manifest file*
