@@ -1,4 +1,4 @@
-package com.example.androidkotlincomposebasics.ui.theme
+package com.example.Lemonade.ui.theme
 
 import android.app.Activity
 import android.os.Build

@@ -1,4 +1,4 @@
-package com.example.androidkotlincomposebasics.ui.theme
+package com.example.Lemonade.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
