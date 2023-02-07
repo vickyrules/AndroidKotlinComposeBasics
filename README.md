@@ -42,6 +42,12 @@ The setContent() function within the onCreate() function is used to define your 
 
 ``Compose uses a Modifier object, which is a collection of elements that decorate or modify the behavior of Compose UI elements. You use this to style the UI components of the Dice Roller app's components.``
 
+* *state in Compose*
+
+``
+State in an app is any value that can change over time. In this app, the state is the cost of service.
+``
+
 ---
 
 * [Kotlin Nullabilty HandLing](https://developer.android.com/codelabs/basic-android-kotlin-compose-nullability?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-2-pathway-1%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-nullability#2)
