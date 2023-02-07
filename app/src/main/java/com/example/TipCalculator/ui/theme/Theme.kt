@@ -1,4 +1,4 @@
-package com.example.Lemonade.ui.theme
+package com.example.TipCalculator.ui.theme
 
 import android.app.Activity
 import android.os.Build
