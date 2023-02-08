@@ -47,6 +47,7 @@ The setContent() function within the onCreate() function is used to define your 
 ``
 State in an app is any value that can change over time. In this app, the state is the cost of service.
 ``
+[learn more..](https://developer.android.com/codelabs/basic-android-kotlin-compose-using-state?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-2-pathway-3%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-using-state#13)
 
 ---
 
