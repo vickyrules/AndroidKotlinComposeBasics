@@ -12,7 +12,7 @@
         android:theme="@style/Theme.AndroidKotlinComposeBasics"
         tools:targetApi="31">
         <activity
-            android:name="com.example.TipCalculator.MainActivity"
+            android:name="com.example.Affirmations.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.AndroidKotlinComposeBasics">

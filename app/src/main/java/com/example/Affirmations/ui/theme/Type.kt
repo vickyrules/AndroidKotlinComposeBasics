@@ -1,4 +1,4 @@
-package com.example.TipCalculator.ui.theme
+package com.example.Affirmations.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
