@@ -1,4 +1,4 @@
-package com.example.Affirmations.ui.theme
+package com.example.Woof.ui.theme
 
 import android.app.Activity
 import android.os.Build
