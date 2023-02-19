@@ -46,10 +46,10 @@ The setContent() function within the onCreate() function is used to define your 
 
 * *state in Compose*
 
-``
-State in an app is any value that can change over time. In this app, the state is the cost of service.
-``
+>State in an app is any value that can change over time. In this app, the state is the cost of service.
 [learn more..](https://developer.android.com/codelabs/basic-android-kotlin-compose-using-state?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-2-pathway-3%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-using-state#13)
+
+
 ---
 ## Compose Animations: 
 * *Spring Bounce Animation*
@@ -91,7 +91,7 @@ State in an app is any value that can change over time. In this app, the state i
 ## UI-UX Design Best Practise:
 
 * [design adapted icon](https://developer.android.com/codelabs/basic-android-kotlin-compose-training-change-app-icon?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-3-pathway-2%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-training-change-app-icon#8)
-
+* [material color system](https://m2.material.io/design/color/the-color-system.html)
 ---
 
 ## Testing for App Accessibility
