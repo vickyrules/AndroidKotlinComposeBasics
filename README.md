@@ -16,8 +16,11 @@ The Android Manifest is an XML file that provides important information about th
 * *What is Activity*
 
 ``
-An activity in Android is a single, focused task that a user can perform. An activity represents a screen in an app with which the user can interact in order to do something, such as view a list of items, take a photo, or send an email. An Android app can have multiple activities, each with a different screen, and the activities can be navigated between using intents. An activity is implemented as a Java or Kotlin class that extends the Activity class and must be declared in the Android Manifest file.``
+An activity in Android is a single, focused task that a user can perform. An activity represents a screen in an app with which the user can interact in order to do something, such as view a list of items, take a photo, or send an email. An Android app can have multiple activities, each with a different screen, and the activities can be navigated between using intents. An activity is implemented as a Java or Kotlin class that extends the Activity class and must be declared in the Android Manifest file.
+``
+
 ---
+
 
 ### Activity LifeCycle
 <div  align="center" >
