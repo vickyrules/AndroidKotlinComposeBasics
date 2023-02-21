@@ -17,19 +17,41 @@ The Android Manifest is an XML file that provides important information about th
 
 ``
 An activity in Android is a single, focused task that a user can perform. An activity represents a screen in an app with which the user can interact in order to do something, such as view a list of items, take a photo, or send an email. An Android app can have multiple activities, each with a different screen, and the activities can be navigated between using intents. An activity is implemented as a Java or Kotlin class that extends the Activity class and must be declared in the Android Manifest file.``
+---
+
+### Activity LifeCycle
+<div  align="center" >
+<img width="50%" src = "https://user-images.githubusercontent.com/73611313/220359339-338a6423-0a89-4771-aefe-8dbb2139fd90.png"/>
+<img width="50%" src = "https://user-images.githubusercontent.com/73611313/220364213-c6cc8dd8-acbc-41c8-8519-20e4dfb3fd3d.png"/>
+</div>
+
 
 * *onCreate()*
-
-``
-The onCreate() function is the entry point to this app and calls other functions to build the user interface. In Kotlin programs, the main() function is the specific place in your code where the Kotlin compiler starts. In Android apps, the onCreate() function fills that role. ``
+>The onCreate() function is the entry point to this app and calls other functions to build the user interface. In Kotlin programs, the main() function is the specific place in your code where the Kotlin compiler starts. In Android apps, the onCreate() function fills that role. ``
 
 * *setContent()*
 
+>The setContent() function within the onCreate() function is used to define your layout through composable functions. All functions marked with the @Composable annotation can be called from the setContent() function or from other Composable functions. The annotation tells the Kotlin compiler that this function is used by Jetpack Compose to generate the UI.
+
+`` The compiler takes the Kotlin code you wrote, looks at it line by line, and translates it into something that the computer can understand. This process is called compiling your code.
 ``
-The setContent() function within the onCreate() function is used to define your layout through composable functions. All functions marked with the @Composable annotation can be called from the setContent() function or from other Composable functions. The annotation tells the Kotlin compiler that this function is used by Jetpack Compose to generate the UI.
-``
-> The compiler takes the Kotlin code you wrote, looks at it line by line, and translates it into something that the computer can understand. This process is called compiling your code.
-> 
+
+* *onStart()*
+> The onStart() lifecycle method is called just after onCreate(). After onStart() runs, your activity is visible on the screen. Unlike onCreate(), which is called only once to initialize your activity, onStart() can be called by the system many times in the lifecycle of your activity.
+
+* *onRestart()*
+* *onResume()*
+* *onPause()*
+* *onDestroy()*
+
+[summary](https://developer.android.com/codelabs/basic-android-kotlin-compose-activity-lifecycle?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-4-pathway-1%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-activity-lifecycle#6)
+
+**When an activity starts from the beginning, you see all three of these lifecycle callbacks called in order:**
+
+>* onCreate() when the system creates the app.
+>* onStart() makes the app visible on the screen, but the user is not yet able to interact with it.
+>* onResume() brings the app to the foreground, and the user is now able to interact with it.
+
 ---
 ## Jetpack Compose: 
 * *Composable function*
@@ -103,6 +125,8 @@ The setContent() function within the onCreate() function is used to define your 
 
 ---
 ### Descriptions (Project Wise):
+6). [DesertClicker](https://developer.android.com/codelabs/basic-android-kotlin-compose-activity-lifecycle?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-4-pathway-1%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-activity-lifecycle#1)
+
 5).
 * [Woof with Animation](https://developer.android.com/codelabs/basic-android-kotlin-compose-woof-animation?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-3-pathway-3%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-woof-animation#2)
 * [Woof static](https://developer.android.com/codelabs/basic-android-kotlin-compose-material-theming?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-3-pathway-3%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-material-theming#2)
