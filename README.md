@@ -15,12 +15,9 @@ The Android Manifest is an XML file that provides important information about th
 ``
 * *What is Activity*
 
-``
-An activity in Android is a single, focused task that a user can perform. An activity represents a screen in an app with which the user can interact in order to do something, such as view a list of items, take a photo, or send an email. An Android app can have multiple activities, each with a different screen, and the activities can be navigated between using intents. An activity is implemented as a Java or Kotlin class that extends the Activity class and must be declared in the Android Manifest file.
-``
+``An activity in Android is a single, focused task that a user can perform. An activity represents a screen in an app with which the user can interact in order to do something, such as view a list of items, take a photo, or send an email. An Android app can have multiple activities, each with a different screen, and the activities can be navigated between using intents. An activity is implemented as a Java or Kotlin class that extends the Activity class and must be declared in the Android Manifest file.``
 
 ---
-
 
 ### Activity LifeCycle
 <div  align="center" >
@@ -104,7 +101,36 @@ An activity in Android is a single, focused task that a user can perform. An act
 
 * [Higher order functions](https://developer.android.com/codelabs/basic-android-kotlin-compose-higher-order-functions?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-3-pathway-1%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-higher-order-functions#8)
 
-* []()
+* ### Coroutines:
+  >Concurrency involves performing multiple tasks in your app at the same time. For example, your app can get data from a web server or save user data on the device, while responding to user input events and updating the UI accordingly.
+
+    ``To do work concurrently in your app, you will be using Kotlin coroutines. Coroutines allow the execution of a block of code to be suspended and then resumed later, so that other work can be done in the meantime. Coroutines make it easier to write asynchronous code, which means one task doesn't need to finish completely before starting the next task, enabling multiple tasks to run concurrently.``
+  
+    * ###### Synchronous:
+  
+  > In synchronous code, only one conceptual task is in progress at a time. You can think of it as a sequential linear path. One task must finish completely before the next one is started.
+  
+    * ###### Asynchronous:
+  > Use the launch() function from the coroutines library to launch a new coroutine. To execute tasks concurrently, add multiple launch() functions to your code so that multiple coroutines can be in progress at the same time.
+       [read more...](https://developer.android.com/codelabs/basic-android-kotlin-compose-coroutines-kotlin-playground?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-5-pathway-1%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-coroutines-kotlin-playground#2)
+  
+    * *async()*
+  > * In the real world, you won't know how long the network requests for forecast and temperature will take. If you want to display a unified weather report when both tasks are done, then the current approach with launch() isn't sufficient. That's where async() comes in.
+  > * Use the async() function from the coroutines library if you care about when the coroutine finishes and need a return value from it.
+      [read how to use](https://developer.android.com/codelabs/basic-android-kotlin-compose-coroutines-kotlin-playground?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-5-pathway-1%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-coroutines-kotlin-playground#2)
+  
+  * *Parallel Decomposition*
+  >Parallel decomposition involves taking a problem and breaking it into smaller subtasks that can be solved in parallel. When the results of the subtasks are ready, you can combine them into a final result.
+  
+  * ###### EXCEPTION and CANCELLATION 
+  >An exception is an unexpected event that happens during execution of your code. You should implement appropriate ways of handling these exceptions, to prevent your app from crashing and impacting the user experience negatively.
+  
+  >  A similar topic to exceptions is cancellation of coroutines. This scenario is typically user-driven when an event has caused the app to cancel work that it had previously started.
+  >[read more..](https://developer.android.com/codelabs/basic-android-kotlin-compose-coroutines-kotlin-playground?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-5-pathway-1%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-coroutines-kotlin-playground#3)
+
+  * ###### CoroutineContext
+  > The CoroutineContext provides information about the context in which the coroutine will be running in. The CoroutineContext is essentially a map that stores elements where each element has a unique key. These are not required fields, but here are some examples of what may be contained in a context:
+  > [read more...](https://developer.android.com/codelabs/basic-android-kotlin-compose-coroutines-kotlin-playground?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-5-pathway-1%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-coroutines-kotlin-playground#4)
 ---
 ## Testing:
 * *Automated tests*
@@ -117,6 +143,9 @@ An activity in Android is a single, focused task that a user can perform. An act
 
 * [design adapted icon](https://developer.android.com/codelabs/basic-android-kotlin-compose-training-change-app-icon?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-3-pathway-2%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-training-change-app-icon#8)
 * [material color system](https://m2.material.io/design/color/the-color-system.html)
+
+
+
 ---
 
 ## Testing for App Accessibility
