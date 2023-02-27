@@ -145,7 +145,6 @@ The Android Manifest is an XML file that provides important information about th
 * [material color system](https://m2.material.io/design/color/the-color-system.html)
 
 
-
 ---
 
 ## Testing for App Accessibility
