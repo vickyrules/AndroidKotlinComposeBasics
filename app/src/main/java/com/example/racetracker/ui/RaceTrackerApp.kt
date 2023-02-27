@@ -53,6 +53,7 @@ import com.example.racetracker.R
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
 
+
 @Composable
 fun RaceTrackerApp() {
     /**
@@ -61,13 +62,23 @@ fun RaceTrackerApp() {
      * Coroutines that implementation detail is stripped out.
      */
     val playerOne = remember {
-        RaceParticipant(name = "Player 1", progressIncrement = 1)
+        RaceParticipant(name = "Player 1", progressIncrement = 5)
     }
     val playerTwo = remember {
         RaceParticipant(name = "Player 2", progressIncrement = 2)
     }
     var raceInProgress by remember { mutableStateOf(false) }
 
+    if (raceInProgress) {
+        LaunchedEffect(playerOne, playerTwo) {
+            coroutineScope {
+                launch { playerOne.run() }
+                launch { playerTwo.run() }
+            }
+
+            raceInProgress = false
+        }
+    }
     RaceTrackerScreen(
         playerOne = playerOne,
         playerTwo = playerTwo,
@@ -202,7 +213,7 @@ private fun RaceControls(
     }
 }
 
-@Preview
+@Preview(showBackground = true)
 @Composable
 fun RaceTrackerAppPreview() {
     MaterialTheme {
