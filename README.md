@@ -138,6 +138,10 @@ The Android Manifest is an XML file that provides important information about th
 ``Automated testing is code that checks to ensure that another piece of code that you wrote works correctly.``
 [read more...](https://developer.android.com/codelabs/basic-android-kotlin-compose-write-automated-tests?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-2-pathway-3%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-write-automated-tests#2)
 
+* *Unit tests to test coroutines:*
+> * Unit testing code that uses coroutines requires some extra attention, as their execution can be asynchronous and happen across multiple threads.
+> * To call suspending functions in tests, you need to be in a coroutine. As JUnit test functions themselves aren't suspending functions, you need to use the runTest coroutine builder. This builder is part of the kotlinx-coroutines-test library and is designed to execute tests. The builder executes the test body in a new coroutine.  
+[example](https://developer.android.com/codelabs/basic-android-kotlin-compose-coroutines-android-studio?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-5-pathway-1%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-coroutines-android-studio#6)
 ---
 ## UI-UX Design Best Practise:
 
