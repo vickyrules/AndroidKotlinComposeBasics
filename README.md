@@ -159,6 +159,23 @@ The Android Manifest is an XML file that provides important information about th
 >[Switch Access](https://developer.android.com/codelabs/basic-android-kotlin-compose-test-accessibility?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-3-pathway-3%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-test-accessibility#3) lets you interact with your Android device using one or more switches instead of the touchscreen. This alternative to using the touchscreen for users is especially helpful to users with limited dexterity.
 
 ---
+#### Networks  
+* [Http response](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+  
+* *REST*
+
+    ``REST is a software architectural style that defines the set of rules to be used for creating web service``
+
+
+    *REST architecture must have:* 
+
+      * Client-server architecture
+      * Resources exposed as URIs (Uniform Resource Idetifiers)
+      * Uniform Interface
+      * Stateless
+
+
+---
 ### Descriptions (Project Wise):
 7). [Race Tracker](https://developer.android.com/codelabs/basic-android-kotlin-compose-coroutines-android-studio?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-5-pathway-1%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-coroutines-android-studio#1)
 
