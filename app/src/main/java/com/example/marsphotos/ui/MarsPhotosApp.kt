@@ -44,9 +44,7 @@ fun MarsPhotosApp(modifier: Modifier = Modifier) {
             color = MaterialTheme.colors.background
         ) {
             val marsViewModel: MarsViewModel = viewModel()
-            HomeScreen(
-                marsUiState = marsViewModel.marsUiState
-            )
+            HomeScreen(marsUiState = marsViewModel.marsUiState)
         }
     }
 }

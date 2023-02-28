@@ -16,6 +16,8 @@
   -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -25,7 +27,7 @@
         android:theme="@style/Theme.MarsPhotosTheme"
         tools:targetApi="32">
         <activity
-            android:name="com.example.marsphotos.MainActivity"
+            android:name="MainActivity"
             android:exported="true"
             android:theme="@style/Theme.MarsPhotosTheme">
             <intent-filter>
