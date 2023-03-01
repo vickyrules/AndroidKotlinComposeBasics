@@ -16,9 +16,12 @@
 package com.example.marsphotos.ui.screens
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.size
+import androidx.compose.material.Button
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -33,12 +36,13 @@ import com.example.marsphotos.ui.theme.MarsPhotosTheme
 @Composable
 fun HomeScreen(
     marsUiState: MarsUiState,
+    retryAction: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     when (marsUiState) {
         is MarsUiState.Loading -> LoadingScreen(modifier)
         is MarsUiState.Success -> ResultScreen(marsUiState.photos, modifier)
-        is MarsUiState.Error -> ErrorScreen(modifier)
+        is MarsUiState.Error -> ErrorScreen(retryAction, modifier)
     }
 }
 
@@ -60,20 +64,24 @@ fun LoadingScreen(modifier: Modifier = Modifier) {
 }
 
 /**
- * The home screen displaying error message
+ * The home screen displaying error message with re-attempt button.
  */
 @Composable
-fun ErrorScreen(modifier: Modifier = Modifier) {
-    Box(
-        contentAlignment = Alignment.Center,
-        modifier = modifier.fillMaxSize()
+fun ErrorScreen(retryAction: () -> Unit, modifier: Modifier = Modifier) {
+    Column(
+        modifier = modifier.fillMaxSize(),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(stringResource(R.string.loading_failed))
+        Button(onClick = retryAction) {
+            Text(stringResource(R.string.retry))
+        }
     }
 }
 
 /**
- * The home screen displaying number of retrieved photos.
+ * ResultScreen displaying number of photos retrieved.
  */
 @Composable
 fun ResultScreen(photos: String, modifier: Modifier = Modifier) {
@@ -97,7 +105,7 @@ fun LoadingScreenPreview() {
 @Composable
 fun ErrorScreenPreview() {
     MarsPhotosTheme {
-        ErrorScreen()
+        ErrorScreen({})
     }
 }
 
@@ -105,6 +113,6 @@ fun ErrorScreenPreview() {
 @Composable
 fun ResultScreenPreview() {
     MarsPhotosTheme {
-        ResultScreen(stringResource(R.string.result))
+        ResultScreen(stringResource(R.string.placeholder_success))
     }
 }

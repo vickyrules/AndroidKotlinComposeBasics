@@ -173,7 +173,13 @@ The Android Manifest is an XML file that provides important information about th
       * Resources exposed as URIs (Uniform Resource Idetifiers)
       * Uniform Interface
       * Stateless
+* *Data Layer*
 
+  ``A data layer is responsible for the business logic of your app and for sourcing and saving data for your app. The data layer exposes data to the UI layer using the Unidirectional Data Flow pattern.``[more...](https://developer.android.com/codelabs/basic-android-kotlin-compose-add-repository?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-5-pathway-2%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-add-repository#1)
+---
+
+##### Additionals:
+* [Android's recommended app architecture](https://developer.android.com/topic/architecture#recommended-app-arch)
 
 ---
 ### Descriptions (Project Wise):
